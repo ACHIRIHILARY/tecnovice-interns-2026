@@ -1,0 +1,20 @@
+body{
+    background-color: #e5e5e5;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    align-items: center;
+    color: #430004;
+    margin-bottom: 10px;
+}
+button{
+    color: black;
+    background-color: rgb(112, 158, 102);
+    justify-content: ;
+    font-size: 15px;
+}button:hover{
+    background-color: green;
+}
