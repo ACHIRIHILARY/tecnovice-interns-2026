@@ -13,7 +13,6 @@ h1{
 button{
     color: black;
     background-color: rgb(112, 158, 102);
-    justify-content: ;
     font-size: 15px;
 }button:hover{
     background-color: green;
