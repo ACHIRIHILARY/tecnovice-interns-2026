@@ -1,22 +1,113 @@
-body{
-    background-color: #e5e5e5;
-    font-family: sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #187693, #2a5298);
     display: flex;
-    justify-content: center;
+    justify-content: centr;
     align-items: center;
 }
-h1{
-    align-items: center;
-    color: green;
-    margin-bottom: 10px;
+
+.container {
+    width: 100%;
+    padding: 20px;
 }
-button{
-    color: black;
-    background-color: rgb(112, 158, 102);
-    font-size: 15px;
-}button:hover{
-    background-color: green;
+
+.form-box {
+    background: #ffffff;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(55, 52, 52, 0.687);
 }
-div{
+
+.form-box h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.checkbox-group {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+
+}
+
+.checkbox-group div {
     padding: 5px;
+    margin-left: 20px;
+}
+
+.input-group input:focus {
+    border-color: #2a5298;
+    outline: none;
+    box-shadow: 0 0 5px rgba(42, 82, 152, 0.3);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #3c65ac;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #1e3c72;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-text a {
+    color: #2a5298;
+    text-decoration: none;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #219283;
+    border-radius: 8px;
 }

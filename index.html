@@ -1,45 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soba</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">ExoticHob</div>
-            <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Market</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#"></a>About</li>
-            </ul>
-    </nav>
-    </header>
-        <main>
-            <section class="contact"><h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, sint.</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis quidem, a quaerat excepturi tenetur aut nobis adipisci sint quis voluptatum, qui illo. Laborum delectus dolore, omnis hic pariatur molestiae quibusdam, labore cumque obcaecati nihil nostrum excepturi vero ducimus repellat id tempora! Officiis maxime aspernatur, quo accusantium tenetur natus atque corrupti!</p>
-            </section>
-            <section class="description"><h1>Lorem ipsum dolor sit amet consectetur.</h1>
-                <img src="#" alt="image1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit laudantium. Sapiente minima, assumenda necessitatibus doloribus molestias voluptatum officia dicta, magni sed error quis fugiat. Nemo consequuntur voluptas natus dolore.</p>
-                <img src="#" alt="image2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit laudantium. Sapiente minima, assumenda necessitatibus doloribus molestias voluptatum officia dicta, magni sed error quis fugiat. Nemo consequuntur voluptas natus dolore.</p>
-                <img src="#" alt="image3">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, velit laudantium. Sapiente minima, assumenda necessitatibus doloribus molestias voluptatum officia dicta, magni sed error quis fugiat. Nemo consequuntur voluptas natus dolore.</p>
-            </section>
-            <section class="business">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-                <img src="#" alt="image4">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos itaque aliquid dolorum veniam sapiente, necessitatibus cupiditate qui obcaecati repellat autem ex placeat nemo rem.</p>
-                </section>
-        </main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Create Account</h1>
+
+        <form action="#" id="registerForm" method="POST">
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="checkbox-group">
+            <label>Gender</label>
+            <div>
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create password" required />
+          </div>
+
+          <div class="input-group">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Confirm password" required
+            />
+          </div>
+          <button type="submit" class="btn">Register</button>
+
+          <p class="login-text">
+            Already have an account? <a href="#">Login</a>
+          </p>
+          <div id="output"></div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+  const form = document.getElementById("registerForm");
+  const output = document.getElementById("output");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const fullName = document.getElementById("fullname").value;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+
+    const gender = document.querySelector('input[name="gender"]:checked')?.value;
+
+    output.innerHTML = `
+      <h3>Submitted Information:</h3>
+      <p><strong>Full Name:</strong> ${fullName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Gender:</strong> ${gender}</p>
+      <p><strong>Password:</strong> ${password}</p>
+    `;
+  });
+</script>
 </body>
+</html>
+  </body>
 </html>
