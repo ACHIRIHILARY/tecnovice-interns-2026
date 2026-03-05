@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 body {
 =======
 <<<<<<< HEAD
@@ -6,11 +7,57 @@ body {
     font-family: Arial, sans-serif;
     background-color: rgb(24, 2, 2);
 >>>>>>> 7b85e653f368f9fe63145ed7f65741dba7ea0137
+=======
+/* style.css */
+
+:root {
+    --bg: #0f172a;
+    --calc-bg: #1e293b;
+    --text: #f8fafc;
+    --accent: #6366f1;
+    --op-color: #f59e0b;
+}
+
+body {
+    background-color: var(--bg);
+=======
+body {
+>>>>>>> 351c5903e33f1c63416ed137ab2276924c89a701
+>>>>>>> b7ab4717ff09bb37cd073bdcb7eaa0aca43dab70
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.calculator {
+    background: var(--calc-bg);
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+#display {
+    background: #0b1120;
+    color: var(--accent);
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+=======
+>>>>>>> b7ab4717ff09bb37cd073bdcb7eaa0aca43dab70
     background: black;
     font-family: Arial, sans-serif;
 }
@@ -31,18 +78,53 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     min-width: 240px;
+>>>>>>> 351c5903e33f1c63416ed137ab2276924c89a701
 }
 
 .buttons {
     display: grid;
+<<<<<<< HEAD
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+=======
     grid-template-columns: repeat(4, 60px);
     gap: 10px;
+>>>>>>> 351c5903e33f1c63416ed137ab2276924c89a701
 }
 
 .btn {
     padding: 20px;
     font-size: 1.2rem;
     border: none;
+<<<<<<< HEAD
+    border-radius: 12px;
+    background: #334155;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    background: #475569;
+}
+
+.operator {
+    color: var(--op-color);
+    font-weight: bold;
+}
+
+.equal {
+    background: var(--accent);
+    font-weight: bold;
+}
+
+.equal:hover {
+    background: #4f46e5;
+}
+
+.col-2 {
+    grid-column: span 2;
+=======
     border-radius: 5px;
     cursor: pointer;
     background: #333;
@@ -57,6 +139,7 @@ body {
 .equal {
     grid-column: span 1;
     background: black;
+<<<<<<< HEAD
 =======
     margin: 0;
 }
@@ -201,4 +284,7 @@ p {
     color: #fff;
 >>>>>>> 1b243d765ce09f2772a8502b6d5b426b600d6b94
 >>>>>>> 7b85e653f368f9fe63145ed7f65741dba7ea0137
+=======
+>>>>>>> 351c5903e33f1c63416ed137ab2276924c89a701
+>>>>>>> b7ab4717ff09bb37cd073bdcb7eaa0aca43dab70
 }
