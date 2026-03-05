@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container{
+    border: 1px solid;
+    margin: 50px auto;
+    width: 320px;
+    height: 520px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: black;
+    box-shadow: 0 5px 20px black;
+    background: #2c2964;
+}
+input{
+    width: 97%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 15px;
+    border: 1px solid rgb(176, 176, 176);
+    border-radius: 6px;
+    color: rgb(71, 71, 71);
+    background-color: rgb(225, 225, 225);
+}
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 25px;
+    color: green;
+    box-shadow: 0 5px 10px black ;
+    border: none;
+    cursor: pointer;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 5px;
+    margin-top: 10px;
+  }
+#allbuttons{
+    margin: 30px;
+}
+.buttons-1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 2px solid rgb(148, 148, 148)
+}
+button:hover{
+    background-color: hsla(87, 77%, 85%, 0.53);
+}
+button:active{
+    background-color: hsla(87, 77%, 92%, 0.53);
+}
+#result{
+    background-color: hsl(120, 31%, 58%);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+#result:hover{
+    background-color: hsl(120, 31%, 70%);
+}
+#result:active{
+    background-color: hsl(120, 31%, 80%)
+}
+#clearDisplay{
+    background: rgba(0, 0, 0, 0.847);
+    color: orange;
+    font-size: 25px;
+}
+#clearDisplay:hover{
+   background: hsla(0, 0%, 10%, 0.847); 
+}
+#clearDisplay:active{
+    background: hsla(0, 0%, 20%, 0.847); 
+}
